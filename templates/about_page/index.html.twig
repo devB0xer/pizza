@@ -1,20 +1,17 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello AboutPageController!{% endblock %}
+{% block title %}О нас{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>G:/Programms/OSPanel/home/symfony/pizza.site.local/pizza/src/Controller/AboutPageController.php</code></li>
-        <li>Your template at <code>G:/Programms/OSPanel/home/symfony/pizza.site.local/pizza/templates/about_page/index.html.twig</code></li>
-    </ul>
-</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1 class="text-center mb-4">Наша история</h1>
+                <img src="" alt="Наш шеф-повар" class="img-fluid rounded mb-3">
+                <p>Мы - семейная пиццерия с богатой историей и традициями. Наша миссия - дарить радость каждому клиенту через вкусную и качественную пиццу. </p>
+                <p>Мы используем только свежие и натуральные ингредиенты, а наши повара - настоящие мастера своего дела.</p>
+                <p>Приходите к нам и попробуйте настоящую итальянскую пиццу!</p>
+            </div>
+        </div>
+    </div>
 {% endblock %}

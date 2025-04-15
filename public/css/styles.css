@@ -1,0 +1,97 @@
+:root {
+    --primary-color: #D35400; /* оранж (томатный соус) */
+    --secondary-color: #F1C40F; /*  (сыр) */
+    --accent-color: #795548;   /* (тесто?) */
+    --text-color: #333;        /* темно-серый (основной текст) */
+    --bg-color: #FFF;         /* фон */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* навигация */
+.navbar {
+    background-color: var(--accent-color) !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--secondary-color) !important;
+}
+
+.navbar-nav .nav-link {
+    color: var(--bg-color) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+/* жамбатрон */
+.jumbotron {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.jumbotron h1 {
+    color: var(--primary-color);
+}
+
+/* карточки меню */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+}
+
+.card-title {
+    color: var(--primary-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: darken(var(--primary-color), 10%);
+    border-color: darken(var(--primary-color), 10%);
+}
+
+/* Карусель */
+.carousel-item {
+    height: 500px; 
+}
+
+.carousel-item img {
+    object-fit: cover; 
+    height: 500px;    
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* подвал */
+footer {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
